@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 /*
 Since this component doesn't need to hold state, we can make it a Stateless
 Functional Component.
 */
-const MovieCard = props => {
+const MovieCard = (props) => {
   /*
     Destructuring via ES6. We're getting the profiles, users, and movies properties
     off of the pros passed into this presentational component. If you need a refresher
@@ -23,7 +23,7 @@ const MovieCard = props => {
       ) : (
         <ul>
           {usersWhoLikedMovie &&
-            usersWhoLikedMovie.map(userId => {
+            usersWhoLikedMovie.map((userId) => {
               return (
                 <li key={userId}>
                   <p>{users[userId].name}</p>
